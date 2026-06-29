@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bubble Shop 🐻 — K-Pop Store Morocco</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+  ✨ Livraison partout au Maroc • Commandez maintenant et recevez votre colis sous 2-5 jours 🐻
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo" onclick="showPage('home')">
+      <div class="logo-bear">🐻</div>
+      <span class="logo-text">Bubble Shop</span>
+    </a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" onclick="showPage('albums')" id="nav-albums">Albums</a></li>
+      <li><a href="#" onclick="showPage('photocards')" id="nav-photocards">Photocards</a></li>
+      <li><a href="#" onclick="showPage('merch')" id="nav-merch">Merch</a></li>
+      <li><a href="#" onclick="showPage('other')" id="nav-other">Autre</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-btn" onclick="toggleLang()">FR / EN</button>
+      <button class="cart-btn" onclick="toggleCart()">
+        🛒 Panier <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3 id="cartTitle">🛒 Mon Panier</h3>
+    <button class="close-btn" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty">
+      <div class="empty-icon">🛒</div>
+      <p id="cartEmptyMsg">Votre panier est vide</p>
+      <p style="font-size:0.85rem;margin-top:8px;color:#bbb" id="cartEmptyHint">Ajoutez des produits pour commencer !</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span id="totalLabel">Total</span>
+      <span class="total-amount" id="cartTotal">0 MAD</span>
+    </div>
+    <button class="checkout-btn" onclick="goToCheckout()" id="checkoutBtn">
+    📷 Commander sur Instagram
+    </button>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main>
+
+<!-- HOME PAGE -->
+<div class="page-panel active" id="page-home">
+  <!-- HERO -->
+  <section class="hero">
+    <canvas class="confetti-canvas" id="confettiCanvas"></canvas>
+    <div class="hero-inner">
+      <span class="hero-bear">🐻</span>
+      <div class="hero-badge" id="heroBadge">✨ K-POP STORE • MAROC</div>
+      <h1 id="heroTitle">Votre univers <span>K-Pop</span> préféré</h1>
+      <p id="heroDesc">Albums, photocards, merch et plus encore — livraison partout au Maroc 🇲🇦</p>
+      <div class="hero-cta">
+        <a href="#" class="btn-primary" onclick="showPage('albums')" id="heroBtn1">Voir les Albums</a>
+        <a href="https://www.instagram.com/moroccan_kpop_shop"
+           target="_blank"
+          class="btn-outline">
+        Commander sur Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS OVERVIEW -->
+  <section class="products-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="eyebrow" id="newLabel">NOUVEAUTÉS</span>
+        <h2 id="allProductsTitle">Tous nos produits</h2>
+        <p id="allProductsDesc">Découvrez notre collection K-Pop 🌸</p>
+      </div>
+      <div class="category-bar" id="mainCatBar">
+        <button class="cat-pill active" onclick="filterProducts('all',this)" data-cat="all" id="catAll">Tout voir</button>
+        <button class="cat-pill" onclick="filterProducts('albums',this)" data-cat="albums" id="catAlbums">Albums</button>
+        <button class="cat-pill" onclick="filterProducts('photocards',this)" data-cat="photocards" id="catPhotocards">Photocards</button>
+        <button class="cat-pill" onclick="filterProducts('merch',this)" data-cat="merch" id="catMerch">Merch</button>
+        <button class="cat-pill" onclick="filterProducts('other',this)" data-cat="other" id="catOther">Autre</button>
+      </div>
+      <div class="product-grid" id="mainProductGrid"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faqTitle">Questions fréquentes</h2>
+        <p id="faqDesc">Tout ce que vous devez savoir</p>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+<!-- CATEGORY PAGES -->
+<div class="page-panel" id="page-albums">
+  <div class="hero" style="padding:3rem clamp(1rem,4vw,3rem)">
+    <div class="hero-inner">
+      <div class="hero-badge">💿 ALBUMS</div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem)" id="albumsPageTitle">Albums K-Pop</h1>
+      <p id="albumsPageDesc">Toutes les dernières sorties de vos groupes favoris</p>
+    </div>
+  </div>
+  <section class="products-section">
+    <div class="section-inner">
+      <div class="product-grid" id="albumsGrid"></div>
+    </div>
+  </section>
+</div>
+
+<div class="page-panel" id="page-photocards">
+  <div class="hero" style="padding:3rem clamp(1rem,4vw,3rem)">
+    <div class="hero-inner">
+      <div class="hero-badge">🃏 PHOTOCARDS</div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem)" id="photocardsPageTitle">Photocards</h1>
+      <p id="photocardsPageDesc">Photocards officielles et inclusions spéciales</p>
+    </div>
+  </div>
+  <section class="products-section">
+    <div class="section-inner">
+      <div class="product-grid" id="photocardsGrid"></div>
+    </div>
+  </section>
+</div>
+
+<div class="page-panel" id="page-merch">
+  <div class="hero" style="padding:3rem clamp(1rem,4vw,3rem)">
+    <div class="hero-inner">
+      <div class="hero-badge">👕 MERCH</div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem)" id="merchPageTitle">Merchandise</h1>
+      <p id="merchPageDesc">Vêtements, accessoires et objets de collection</p>
+    </div>
+  </div>
+  <section class="products-section">
+    <div class="section-inner">
+      <div class="product-grid" id="merchGrid"></div>
+    </div>
+  </section>
+</div>
+
+<div class="page-panel" id="page-other">
+  <div class="hero" style="padding:3rem clamp(1rem,4vw,3rem)">
+    <div class="hero-inner">
+      <div class="hero-badge">🌸 AUTRE</div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem)" id="otherPageTitle">Autres produits</h1>
+      <p id="otherPageDesc">Posters, box et plus encore</p>
+    </div>
+  </div>
+  <section class="products-section">
+    <div class="section-inner">
+      <div class="product-grid" id="otherGrid"></div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-bear" style="background:rgba(255,255,255,0.15)">🐻</div>
+          <span class="logo-text">Bubble Shop</span>
+       <div class="social-links">
+
+  <a href="https://www.instagram.com/moroccan_kpop_shop"
+     target="_blank"
+     class="social-link"
+     aria-label="Instagram">
+     📷
+  </a>
+
+  <a href="https://www.tiktok.com/@moroccan_kpop_shop"
+     target="_blank"
+     class="social-link"
+     aria-label="TikTok">
+     🎵
+  </a>
+
+</div>
+      </div>
+      <div>
+        <div class="footer-title" id="footerShop">BOUTIQUE</div>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showPage('albums')">Albums</a></li>
+          <li><a href="#" onclick="showPage('photocards')">Photocards</a></li>
+          <li><a href="#" onclick="showPage('merch')">Merch</a></li>
+          <li><a href="#" onclick="showPage('other')">Autre</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title" id="footerInfo">INFOS</div>
+        <ul class="footer-links">
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#order" id="footerOrder">Commander</a></li>
+          <li><a href="admin.html" id="footerAdmin">Administration</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p id="footerCopy">© 2026 Bubble Shop — K-Pop Store Maroc 🐻 packed with 💕</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING HEARTS CONTAINER -->
+<div class="floating-hearts" id="floatingHearts"></div>
+
+<!-- INSTAGRAM FAB -->
+<a href="https://www.instagram.com/moroccan_kpop_shop"
+   class="wa-fab"
+   target="_blank"
+   rel="noopener"
+   aria-label="Instagram">
+📷
+</a>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
