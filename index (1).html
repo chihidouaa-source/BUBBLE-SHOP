@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ SEO META TAGS ============ -->
+<title>Bubble Shop 🐻 — Boutique K-Pop au Maroc | Albums, Photocards, Merch</title>
+<meta name="description" content="Bubble Shop est votre boutique K-Pop au Maroc. Albums BTS, BLACKPINK, NewJeans, aespa. Photocards, merch officiel. Livraison rapide partout au Maroc 🇲🇦 Paiement sécurisé par carte bancaire.">
+<meta name="keywords" content="kpop maroc, boutique kpop maroc, albums kpop maroc, photocards maroc, BTS maroc, BLACKPINK maroc, NewJeans maroc, merch kpop, bubble shop maroc, kpop shop morocco">
+<meta name="author" content="Bubble Shop Maroc">
+<meta name="robots" content="index, follow">
+<meta name="language" content="fr">
+<meta name="geo.region" content="MA">
+<meta name="geo.country" content="Morocco">
+<link rel="canonical" href="https://www.bubbleshop.ma/">
+
+<!-- Open Graph (Facebook, WhatsApp preview) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.bubbleshop.ma/">
+<meta property="og:title" content="Bubble Shop 🐻 — Boutique K-Pop au Maroc">
+<meta property="og:description" content="Albums, photocards et merch K-Pop livrés partout au Maroc. Paiement sécurisé par carte bancaire CMI.">
+<meta property="og:image" content="https://www.bubbleshop.ma/og-image.jpg">
+<meta property="og:locale" content="fr_MA">
+<meta property="og:site_name" content="Bubble Shop">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bubble Shop 🐻 — Boutique K-Pop au Maroc">
+<meta name="twitter:description" content="Albums, photocards et merch K-Pop livrés partout au Maroc. Paiement sécurisé.">
+<meta name="twitter:image" content="https://www.bubbleshop.ma/og-image.jpg">
+
+<!-- Schema.org JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Store",
+      "@id": "https://www.bubbleshop.ma/#store",
+      "name": "Bubble Shop",
+      "description": "Boutique K-Pop au Maroc — Albums, Photocards, Merchandise officiel",
+      "url": "https://www.bubbleshop.ma/",
+      "logo": "https://www.bubbleshop.ma/logo.png",
+      "image": "https://www.bubbleshop.ma/og-image.jpg",
+      "telephone": "+212600000000",
+      "email": "contact@bubbleshop.ma",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MA",
+        "addressRegion": "Casablanca-Settat"
+      },
+      "priceRange": "55 MAD - 420 MAD",
+      "currenciesAccepted": "MAD",
+      "paymentAccepted": "Cash, Credit Card, CMI",
+      "openingHours": "Mo-Su 09:00-21:00",
+      "sameAs": [
+        "https://www.instagram.com/bubbleshopma",
+        "https://www.tiktok.com/@bubbleshopma"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.bubbleshop.ma/#website",
+      "url": "https://www.bubbleshop.ma/",
+      "name": "Bubble Shop",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.bubbleshop.ma/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.bubbleshop.ma/"},
+        {"@type":"ListItem","position":2,"name":"Albums","item":"https://www.bubbleshop.ma/#albums"},
+        {"@type":"ListItem","position":3,"name":"Photocards","item":"https://www.bubbleshop.ma/#photocards"},
+        {"@type":"ListItem","position":4,"name":"Merch","item":"https://www.bubbleshop.ma/#merch"}
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --pink:#FF6BAE;
+  --pink-light:#FFB3D1;
+  --pink-pale:#FFE4F0;
+  --pink-ultra:#FFF0F7;
+  --pink-deep:#C94F85;
+  --pink-dark:#9B3066;
+  --white:#FFFFFF;
+  --text:#3D1A2E;
+  --text-muted:#9B6B85;
+  --radius:18px;
+  --radius-sm:10px;
+  --shadow:0 4px 24px rgba(255,107,174,0.15);
+  --shadow-hover:0 8px 36px rgba(255,107,174,0.28);
+  --green:#00C07F;
+  --green-light:#E8F9F4;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Lato',sans-serif;background:#FFF0F7;color:var(--text);min-height:100vh;overflow-x:hidden}
+
+/* NAV */
+nav{
+  background:rgba(255,255,255,0.94);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1.5px solid var(--pink-pale);
+  position:sticky;top:0;z-index:100;
+  padding:0 clamp(1rem,4vw,3rem);
+}
+.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:1rem;height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.logo-bear{width:44px;height:44px;border-radius:50%;background:var(--pink-pale);display:flex;align-items:center;justify-content:center;font-size:24px;border:2px solid var(--pink-light)}
+.logo-text{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.4rem;color:var(--pink);letter-spacing:-0.5px}
+.nav-links{display:flex;align-items:center;gap:.25rem;margin-left:2rem;flex:1;list-style:none}
+.nav-links a{font-family:'Nunito',sans-serif;font-weight:700;font-size:.92rem;color:var(--text-muted);text-decoration:none;padding:8px 16px;border-radius:50px;transition:all .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{background:var(--pink-pale);color:var(--pink)}
+.nav-right{display:flex;align-items:center;gap:12px;margin-left:auto}
+.lang-btn{font-family:'Nunito',sans-serif;font-weight:700;font-size:.8rem;background:var(--pink-pale);color:var(--pink-deep);border:none;padding:6px 14px;border-radius:50px;cursor:pointer;transition:all .2s}
+.lang-btn:hover{background:var(--pink-light);color:white}
+.cart-btn{background:var(--pink);color:white;border:none;border-radius:50px;padding:10px 20px;cursor:pointer;font-family:'Nunito',sans-serif;font-weight:800;font-size:.9rem;display:flex;align-items:center;gap:8px;box-shadow:0 4px 16px rgba(255,107,174,.4);transition:all .2s}
+.cart-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(255,107,174,.5)}
+.cart-count{background:white;color:var(--pink);width:22px;height:22px;border-radius:50%;font-size:.75rem;font-weight:900;display:flex;align-items:center;justify-content:center}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;font-size:1.5rem;color:var(--pink)}
+@media(max-width:768px){
+  .nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:white;flex-direction:column;padding:1rem;border-bottom:2px solid var(--pink-pale);box-shadow:var(--shadow);margin-left:0}
+  .nav-links.open{display:flex}
+  .hamburger{display:block}
+  .logo-text{font-size:1.1rem}
+}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#FFE4F0 0%,#FFF0F7 50%,#FFD6E8 100%);padding:5rem clamp(1rem,4vw,3rem) 4rem;position:relative;overflow:hidden;text-align:center}
+.confetti-canvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
+.hero-inner{max-width:700px;margin:0 auto;position:relative;z-index:1}
+.hero-badge{display:inline-block;background:var(--pink);color:white;font-family:'Nunito',sans-serif;font-weight:800;font-size:.8rem;padding:6px 20px;border-radius:50px;letter-spacing:1px;margin-bottom:1.2rem;animation:fadeDown .6s ease}
+.hero h1{font-family:'Nunito',sans-serif;font-weight:900;font-size:clamp(2.2rem,6vw,4rem);color:var(--pink-dark);line-height:1.1;margin-bottom:1rem;animation:fadeDown .7s ease}
+.hero h1 span{color:var(--pink)}
+.hero p{font-size:1.1rem;color:var(--text-muted);max-width:480px;margin:0 auto 2rem;animation:fadeDown .8s ease}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;animation:fadeDown .9s ease}
+.btn-primary{background:var(--pink);color:white;font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;border:none;padding:14px 32px;border-radius:50px;cursor:pointer;box-shadow:0 6px 24px rgba(255,107,174,.45);transition:all .25s;text-decoration:none;display:inline-block}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(255,107,174,.55)}
+.btn-outline{background:transparent;color:var(--pink);font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;border:2px solid var(--pink-light);padding:12px 30px;border-radius:50px;cursor:pointer;transition:all .25s;text-decoration:none;display:inline-block}
+.btn-outline:hover{background:var(--pink-pale);border-color:var(--pink)}
+.hero-bear{font-size:5rem;margin-bottom:1rem;display:block;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+
+/* PROMO */
+.promo-banner{background:var(--pink);color:white;text-align:center;padding:12px;font-family:'Nunito',sans-serif;font-weight:700;font-size:.92rem;letter-spacing:.3px}
+
+/* TRUST BADGES */
+.trust-bar{background:white;border-bottom:1.5px solid var(--pink-pale);padding:.9rem clamp(1rem,4vw,3rem)}
+.trust-inner{max-width:1280px;margin:0 auto;display:flex;justify-content:center;gap:clamp(1rem,4vw,3rem);flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-family:'Nunito',sans-serif;font-weight:700;font-size:.82rem;color:var(--text-muted)}
+.trust-item .ti{font-size:1.2rem}
+
+/* SECTIONS */
+section{padding:4rem clamp(1rem,4vw,3rem)}
+.section-inner{max-width:1280px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:2.5rem}
+.section-header h2{font-family:'Nunito',sans-serif;font-weight:900;font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--pink-dark);margin-bottom:.5rem}
+.section-header p{color:var(--text-muted);font-size:1rem}
+.eyebrow{font-family:'Nunito',sans-serif;font-weight:800;font-size:.75rem;letter-spacing:2px;color:var(--pink);text-transform:uppercase;display:block;margin-bottom:.5rem}
+
+/* CATEGORY PILLS */
+.category-bar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:2rem}
+.cat-pill{font-family:'Nunito',sans-serif;font-weight:700;font-size:.88rem;padding:9px 22px;border-radius:50px;cursor:pointer;border:2px solid var(--pink-light);color:var(--pink-deep);background:white;transition:all .2s}
+.cat-pill:hover,.cat-pill.active{background:var(--pink);color:white;border-color:var(--pink)}
+
+/* PRODUCTS */
+.products-section{background:white}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5rem}
+.product-card{background:var(--pink-ultra);border-radius:var(--radius);overflow:hidden;border:1.5px solid var(--pink-pale);transition:all .3s;cursor:pointer;position:relative}
+.product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover);border-color:var(--pink-light)}
+.product-img{width:100%;aspect-ratio:1;background:var(--pink-pale);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.product-img img{width:100%;height:100%;object-fit:cover}
+.badge-oos{position:absolute;top:10px;right:10px;background:#FF4D6D;color:white;font-family:'Nunito',sans-serif;font-weight:800;font-size:.7rem;padding:4px 10px;border-radius:50px}
+.badge-new{position:absolute;top:10px;left:10px;background:var(--pink);color:white;font-family:'Nunito',sans-serif;font-weight:800;font-size:.7rem;padding:4px 10px;border-radius:50px}
+.product-info{padding:1rem}
+.product-category{font-size:.72rem;font-weight:700;color:var(--pink);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.product-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;color:var(--text);margin-bottom:6px;line-height:1.3}
+.product-price{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.2rem;color:var(--pink);margin-bottom:12px}
+.add-to-cart{width:100%;background:var(--pink);color:white;font-family:'Nunito',sans-serif;font-weight:800;font-size:.88rem;border:none;padding:10px;border-radius:50px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:6px}
+.add-to-cart:hover:not(:disabled){background:var(--pink-deep)}
+.add-to-cart:disabled{background:#DDD;cursor:not-allowed;color:#AAA}
+.add-to-cart.added{background:#4CAF50}
+
+/* CART SIDEBAR */
+.cart-overlay{position:fixed;inset:0;background:rgba(61,26,46,.4);z-index:200;opacity:0;pointer-events:none;transition:opacity .3s}
+.cart-overlay.open{opacity:1;pointer-events:all}
+.cart-sidebar{position:fixed;top:0;right:0;bottom:0;width:min(420px,100vw);background:white;z-index:201;transform:translateX(100%);transition:transform .35s cubic-bezier(.25,.8,.25,1);display:flex;flex-direction:column;box-shadow:-8px 0 40px rgba(255,107,174,.2)}
+.cart-sidebar.open{transform:translateX(0)}
+.cart-header{background:var(--pink-pale);padding:1.2rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1.5px solid var(--pink-light)}
+.cart-header h3{font-family:'Nunito',sans-serif;font-weight:900;color:var(--pink-dark);font-size:1.1rem}
+.close-btn{background:none;border:none;cursor:pointer;font-size:1.5rem;color:var(--pink-deep);padding:4px}
+.cart-items{flex:1;overflow-y:auto;padding:1rem 1.5rem}
+.cart-item{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--pink-pale)}
+.cart-item-img{width:64px;height:64px;border-radius:var(--radius-sm);background:var(--pink-pale);display:flex;align-items:center;justify-content:center;font-size:1.8rem;flex-shrink:0;overflow:hidden}
+.cart-item-img img{width:100%;height:100%;object-fit:cover}
+.cart-item-info{flex:1}
+.cart-item-name{font-family:'Nunito',sans-serif;font-weight:700;font-size:.9rem;color:var(--text)}
+.cart-item-price{color:var(--pink);font-weight:700;font-size:.9rem;margin-top:4px}
+.cart-qty{display:flex;align-items:center;gap:8px;margin-top:6px}
+.qty-btn{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--pink-light);background:white;cursor:pointer;font-size:1rem;color:var(--pink);display:flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-weight:800}
+.qty-btn:hover{background:var(--pink-pale)}
+.qty-num{font-weight:700;min-width:20px;text-align:center}
+.remove-item{background:none;border:none;cursor:pointer;color:#ccc;font-size:1.1rem;padding:4px}
+.remove-item:hover{color:#FF4D6D}
+.cart-empty{text-align:center;padding:3rem 1rem;color:var(--text-muted)}
+.cart-empty .empty-icon{font-size:3rem;margin-bottom:1rem}
+.cart-footer{padding:1.5rem;border-top:1.5px solid var(--pink-pale);background:var(--pink-ultra)}
+.cart-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.cart-total span:first-child{font-family:'Nunito',sans-serif;font-weight:700;color:var(--text-muted)}
+.cart-total .total-amount{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.3rem;color:var(--pink)}
+.checkout-btn{width:100%;background:var(--pink);color:white;font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;border:none;padding:14px;border-radius:50px;cursor:pointer;box-shadow:0 4px 16px rgba(255,107,174,.4);transition:all .2s}
+.checkout-btn:hover{background:var(--pink-deep);transform:translateY(-2px)}
+
+/* ============ PAYMENT MODAL ============ */
+.modal-overlay{position:fixed;inset:0;background:rgba(30,10,20,.55);z-index:300;opacity:0;pointer-events:none;transition:opacity .3s;display:flex;align-items:center;justify-content:center;padding:1rem}
+.modal-overlay.open{opacity:1;pointer-events:all}
+.payment-modal{background:white;border-radius:24px;width:100%;max-width:520px;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.2);position:relative;animation:slideUp .35s cubic-bezier(.25,.8,.25,1)}
+@keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+.payment-header{background:linear-gradient(135deg,var(--pink-dark),var(--pink));color:white;padding:1.5rem 2rem;border-radius:24px 24px 0 0;position:relative}
+.payment-header h3{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.2rem;margin-bottom:4px}
+.payment-header p{font-size:.85rem;opacity:.85}
+.payment-close{position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,.2);border:none;color:white;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center}
+.payment-close:hover{background:rgba(255,255,255,.35)}
+.payment-body{padding:1.5rem 2rem 2rem}
+
+/* Secure badge */
+.secure-badge{display:flex;align-items:center;gap:10px;background:var(--green-light);border:1.5px solid #B2EAD7;border-radius:var(--radius-sm);padding:10px 14px;margin-bottom:1.5rem}
+.secure-badge .shield{font-size:1.4rem}
+.secure-badge-text{font-family:'Nunito',sans-serif;font-weight:700;font-size:.82rem;color:#007A52}
+.secure-badge-text span{display:block;font-weight:400;font-size:.75rem;color:#009965;margin-top:1px}
+
+/* Order summary in modal */
+.modal-summary{background:var(--pink-ultra);border-radius:var(--radius-sm);padding:1rem 1.2rem;margin-bottom:1.5rem;border:1.5px solid var(--pink-pale)}
+.modal-summary h4{font-family:'Nunito',sans-serif;font-weight:800;font-size:.88rem;color:var(--pink-dark);margin-bottom:8px}
+.modal-sum-item{display:flex;justify-content:space-between;font-size:.83rem;color:var(--text-muted);padding:3px 0}
+.modal-sum-total{display:flex;justify-content:space-between;font-family:'Nunito',sans-serif;font-weight:900;color:var(--pink-dark);font-size:1rem;border-top:1px solid var(--pink-light);margin-top:8px;padding-top:8px}
+
+/* Card form */
+.card-form-section{margin-bottom:1.2rem}
+.card-label{font-family:'Nunito',sans-serif;font-weight:700;font-size:.82rem;color:var(--pink-deep);display:block;margin-bottom:6px}
+.card-input{width:100%;padding:12px 14px;border:1.5px solid #E8D5E0;border-radius:var(--radius-sm);font-family:'Lato',sans-serif;font-size:.95rem;color:var(--text);background:#FAFAFA;transition:border-color .2s;outline:none}
+.card-input:focus{border-color:var(--pink);background:white}
+.card-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card-number-wrap{position:relative}
+.card-number-wrap input{padding-right:48px}
+.card-brand-icon{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:1.3rem;pointer-events:none}
+.cvv-wrap{position:relative}
+.cvv-info{position:absolute;right:10px;top:50%;transform:translateY(-50%);cursor:help;color:var(--text-muted);font-size:.9rem}
+
+/* CMI logos row */
+.cmi-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:1rem;margin-bottom:1.4rem}
+.cmi-badge{background:#F5F5F5;border:1.5px solid #E0E0E0;border-radius:8px;padding:5px 12px;font-family:'Nunito',sans-serif;font-weight:800;font-size:.75rem;color:#555;display:flex;align-items:center;gap:4px}
+.cmi-badge.cmi-main{background:#00529B;color:white;border-color:#00529B}
+.cmi-badge.visa{background:#1A1F71;color:white;border-color:#1A1F71}
+.cmi-badge.mc{background:#EB001B;color:white;border-color:#EB001B}
+
+/* Pay button */
+.pay-btn{width:100%;background:var(--green);color:white;font-family:'Nunito',sans-serif;font-weight:900;font-size:1.05rem;border:none;padding:16px;border-radius:50px;cursor:pointer;box-shadow:0 6px 24px rgba(0,192,127,.35);transition:all .25s;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:1rem}
+.pay-btn:hover{background:#00A86B;transform:translateY(-2px);box-shadow:0 10px 32px rgba(0,192,127,.45)}
+.pay-btn:disabled{background:#CCC;cursor:not-allowed;transform:none;box-shadow:none}
+.pay-footer{text-align:center;font-size:.75rem;color:var(--text-muted);margin-top:12px;line-height:1.6}
+
+/* Payment processing */
+.payment-processing{text-align:center;padding:2rem 1rem;display:none}
+.spinner{width:56px;height:56px;border:4px solid var(--pink-pale);border-top-color:var(--pink);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 1rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+.payment-processing h4{font-family:'Nunito',sans-serif;font-weight:800;color:var(--pink-dark);margin-bottom:.5rem}
+.payment-processing p{color:var(--text-muted);font-size:.9rem}
+.payment-success{text-align:center;padding:2rem 1rem;display:none}
+.success-icon{font-size:4rem;margin-bottom:1rem;animation:popIn .5s cubic-bezier(.25,.8,.25,1)}
+@keyframes popIn{from{transform:scale(0)}to{transform:scale(1)}}
+.payment-success h4{font-family:'Nunito',sans-serif;font-weight:900;color:#007A52;font-size:1.3rem;margin-bottom:.5rem}
+.payment-success p{color:var(--text-muted);font-size:.9rem;line-height:1.6}
+.order-ref{font-family:'Nunito',sans-serif;font-weight:800;color:var(--pink-dark);font-size:.9rem;background:var(--pink-ultra);padding:8px 16px;border-radius:50px;display:inline-block;margin-top:12px}
+
+/* ORDER FORM (delivery) */
+.order-section{background:var(--pink-pale)}
+.order-form-container{max-width:680px;margin:0 auto;background:white;border-radius:var(--radius);padding:clamp(1.5rem,4vw,3rem);box-shadow:var(--shadow);border:1.5px solid var(--pink-light)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-family:'Nunito',sans-serif;font-weight:700;font-size:.85rem;color:var(--pink-deep)}
+.form-group input,.form-group textarea,.form-group select{padding:12px 16px;border:1.5px solid var(--pink-pale);border-radius:var(--radius-sm);font-family:'Lato',sans-serif;font-size:.95rem;color:var(--text);background:var(--pink-ultra);transition:border-color .2s;outline:none}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--pink);background:white}
+.form-group textarea{resize:vertical;min-height:90px}
+
+/* Payment method chooser */
+.pay-method-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1.2rem;grid-column:1/-1}
+.pay-method-card{border:2px solid var(--pink-pale);border-radius:var(--radius-sm);padding:14px;cursor:pointer;transition:all .2s;background:white;text-align:center}
+.pay-method-card:hover{border-color:var(--pink-light);background:var(--pink-ultra)}
+.pay-method-card.selected{border-color:var(--pink);background:var(--pink-ultra)}
+.pay-method-card .pm-icon{font-size:1.8rem;margin-bottom:6px}
+.pay-method-card .pm-label{font-family:'Nunito',sans-serif;font-weight:800;font-size:.85rem;color:var(--text)}
+.pay-method-card .pm-sub{font-size:.75rem;color:var(--text-muted);margin-top:2px}
+.pay-method-card.selected .pm-label{color:var(--pink)}
+
+.order-cart-summary{background:var(--pink-ultra);border-radius:var(--radius-sm);padding:1rem;margin-bottom:1.5rem;border:1.5px solid var(--pink-pale)}
+.order-cart-summary h4{font-family:'Nunito',sans-serif;font-weight:800;color:var(--pink-dark);margin-bottom:10px;font-size:.95rem}
+.summary-item{display:flex;justify-content:space-between;font-size:.88rem;padding:4px 0;color:var(--text-muted)}
+.summary-total{border-top:1px solid var(--pink-light);margin-top:8px;padding-top:8px;display:flex;justify-content:space-between;font-family:'Nunito',sans-serif;font-weight:800;color:var(--pink-dark)}
+.submit-order{width:100%;background:var(--pink);color:white;font-family:'Nunito',sans-serif;font-weight:900;font-size:1.05rem;border:none;padding:16px;border-radius:50px;cursor:pointer;box-shadow:0 6px 24px rgba(255,107,174,.4);transition:all .25s;margin-top:1.5rem}
+.submit-order:hover{background:var(--pink-deep);transform:translateY(-3px)}
+.success-msg{background:#E8F5E9;border:2px solid #4CAF50;border-radius:var(--radius-sm);padding:1rem 1.5rem;text-align:center;color:#2E7D32;font-family:'Nunito',sans-serif;font-weight:700;display:none;margin-top:1rem}
+
+/* FAQ */
+.faq-section{background:white}
+.faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.faq-item{border:1.5px solid var(--pink-pale);border-radius:var(--radius-sm);overflow:hidden;transition:all .2s}
+.faq-item:hover{border-color:var(--pink-light)}
+.faq-q{width:100%;background:var(--pink-ultra);border:none;padding:16px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:'Nunito',sans-serif;font-weight:700;font-size:.95rem;color:var(--text);text-align:left}
+.faq-icon{font-size:1.2rem;color:var(--pink);transition:transform .3s;flex-shrink:0}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s;padding:0 20px;font-size:.92rem;color:var(--text-muted);line-height:1.7;background:white}
+.faq-item.open .faq-a{max-height:220px;padding:14px 20px}
+
+/* FOOTER */
+footer{background:var(--pink-dark);color:white;padding:3rem clamp(1rem,4vw,3rem) 2rem}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+@media(max-width:640px){.footer-grid{grid-template-columns:1fr}}
+.footer-desc{font-size:.88rem;color:rgba(255,255,255,.65);margin-top:10px;line-height:1.6}
+.footer-title{font-family:'Nunito',sans-serif;font-weight:800;font-size:.9rem;margin-bottom:12px;opacity:.6;letter-spacing:1px;text-transform:uppercase}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.88rem;transition:color .2s}
+.footer-links a:hover{color:var(--pink-light)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.15);padding-top:1.5rem;text-align:center;font-size:.82rem;color:rgba(255,255,255,.5)}
+.social-links{display:flex;gap:10px;margin-top:1rem}
+.social-link{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;font-size:1rem;transition:all .2s}
+.social-link:hover{background:var(--pink)}
+
+/* PAGE PANELS */
+.page-panel{display:none}
+.page-panel.active{display:block}
+
+/* TOAST */
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(100px);background:var(--pink-dark);color:white;font-family:'Nunito',sans-serif;font-weight:700;font-size:.9rem;padding:12px 24px;border-radius:50px;z-index:400;transition:transform .35s cubic-bezier(.25,.8,.25,1);white-space:nowrap;box-shadow:0 8px 32px rgba(0,0,0,.2)}
+.toast.show{transform:translateX(-50%) translateY(0)}
+
+/* FLOATING HEARTS */
+.floating-hearts{position:fixed;pointer-events:none;z-index:150;top:0;left:0;width:100%;height:0}
+.heart-particle{position:absolute;font-size:1.2rem;animation:floatUp 2s ease-out forwards;opacity:1}
+@keyframes floatUp{to{transform:translateY(-120px) scale(.3);opacity:0}}
+
+/* WA FAB */
+.wa-fab{position:fixed;bottom:2rem;right:2rem;z-index:150;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;border:none;cursor:pointer;font-size:1.6rem;box-shadow:0 4px 20px rgba(37,211,102,.5);transition:all .2s;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.wa-fab:hover{transform:scale(1.1)}
+
+/* SEO INVISIBLE H1 helper for cat pages */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+
+<!-- SEO: Hidden structured content for indexing -->
+<div class="sr-only">
+  <h1>Bubble Shop — Boutique K-Pop au Maroc</h1>
+  <p>Achetez vos albums K-Pop, photocards, merch officiel. Livraison au Maroc. Paiement sécurisé CMI.</p>
+</div>
+
+<div class="promo-banner">✨ Livraison au Maroc • Paiement sécurisé par carte bancaire CMI 🔒</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar" aria-label="Garanties">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="ti">🔒</span> Paiement sécurisé CMI</div>
+    <div class="trust-item"><span class="ti">💿</span> Produits 100% officiels</div>
+    <div class="trust-item"><span class="ti">🚚</span> Livraison 3-5 jours</div>
+    <div class="trust-item"><span class="ti">↩️</span> Retour sous 7 jours</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Navigation principale">
+  <div class="nav-inner">
+    <a href="#" class="logo" onclick="showPage('home')" aria-label="Bubble Shop — Accueil">
+      <div class="logo-bear" aria-hidden="true">🐻</div>
+      <span class="logo-text">Bubble Shop</span>
+    </a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks" role="menubar">
+      <li role="none"><a href="#" onclick="showPage('albums')" id="nav-albums" role="menuitem">Albums</a></li>
+      <li role="none"><a href="#" onclick="showPage('photocards')" id="nav-photocards" role="menuitem">Photocards</a></li>
+      <li role="none"><a href="#" onclick="showPage('merch')" id="nav-merch" role="menuitem">Merch</a></li>
+      <li role="none"><a href="#" onclick="showPage('other')" id="nav-other" role="menuitem">Autre</a></li>
+      <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-btn" onclick="toggleLang()" aria-label="Changer la langue">FR / EN</button>
+      <button class="cart-btn" onclick="toggleCart()" aria-label="Voir le panier">
+        🛒 Panier <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()" aria-hidden="true"></div>
+<aside class="cart-sidebar" id="cartSidebar" aria-label="Panier" role="complementary">
+  <div class="cart-header">
+    <h3 id="cartTitle">🛒 Mon Panier</h3>
+    <button class="close-btn" onclick="toggleCart()" aria-label="Fermer le panier">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty">
+      <div class="empty-icon" aria-hidden="true">🛒</div>
+      <p id="cartEmptyMsg">Votre panier est vide</p>
+      <p style="font-size:.85rem;margin-top:8px;color:#bbb" id="cartEmptyHint">Ajoutez des produits pour commencer !</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span id="totalLabel">Total</span>
+      <span class="total-amount" id="cartTotal" aria-live="polite">0 MAD</span>
+    </div>
+    <button class="checkout-btn" onclick="goToCheckout()" id="checkoutBtn">Commander maintenant →</button>
+  </div>
+</aside>
+
+<!-- ============ CMI PAYMENT MODAL ============ -->
+<div class="modal-overlay" id="paymentModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="payment-modal">
+    <div class="payment-header">
+      <h3 id="modalTitle">🔒 Paiement sécurisé</h3>
+      <p id="modalSubtitle">Powered by CMI — Centre Monétique Interbancaire</p>
+      <button class="payment-close" onclick="closePaymentModal()" aria-label="Fermer">✕</button>
+    </div>
+    <div class="payment-body" id="paymentBody">
+
+      <!-- Secure badge -->
+      <div class="secure-badge" role="note">
+        <span class="shield" aria-hidden="true">🛡️</span>
+        <div class="secure-badge-text">
+          Connexion SSL 256-bit sécurisée
+          <span>Vos données bancaires sont chiffrées et protégées</span>
+        </div>
+      </div>
+
+      <!-- CMI Accepted cards -->
+      <div class="cmi-row" aria-label="Cartes acceptées">
+        <div class="cmi-badge cmi-main">🏦 CMI</div>
+        <div class="cmi-badge visa">VISA</div>
+        <div class="cmi-badge mc">Mastercard</div>
+        <div class="cmi-badge">CIH</div>
+        <div class="cmi-badge">Banque Populaire</div>
+        <div class="cmi-badge">BMCE</div>
+        <div class="cmi-badge">Attijariwafa</div>
+      </div>
+
+      <!-- Order summary -->
+      <div class="modal-summary" id="modalSummary">
+        <h4 id="modalSummaryTitle">📦 Récapitulatif de commande</h4>
+        <div id="modalSummaryItems"></div>
+        <div class="modal-sum-total">
+          <span id="modalTotalLabel">Total à payer</span>
+          <span id="modalTotalAmount">0 MAD</span>
+        </div>
+      </div>
+
+      <!-- Card form -->
+      <form id="cardForm" onsubmit="processPayment(event)" novalidate>
+        <div class="card-form-section">
+          <label class="card-label" for="cardName" id="lCardName">Nom sur la carte</label>
+          <input class="card-input" type="text" id="cardName" placeholder="FATIMA ZAHRA ALAMI" autocomplete="cc-name" required aria-required="true">
+        </div>
+        <div class="card-form-section">
+          <label class="card-label" for="cardNumber" id="lCardNumber">Numéro de carte</label>
+          <div class="card-number-wrap">
+            <input class="card-input" type="tel" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" autocomplete="cc-number" required aria-required="true" oninput="formatCardNumber(this)">
+            <span class="card-brand-icon" id="cardBrandIcon" aria-hidden="true">💳</span>
+          </div>
+        </div>
+        <div class="card-row card-form-section">
+          <div>
+            <label class="card-label" for="cardExpiry" id="lCardExpiry">Date d'expiration</label>
+            <input class="card-input" type="tel" id="cardExpiry" placeholder="MM/AA" maxlength="5" autocomplete="cc-exp" required aria-required="true" oninput="formatExpiry(this)">
+          </div>
+          <div>
+            <label class="card-label" for="cardCVV" id="lCardCVV">Code CVV</label>
+            <div class="cvv-wrap">
+              <input class="card-input" type="password" id="cardCVV" placeholder="•••" maxlength="4" autocomplete="cc-csc" required aria-required="true" oninput="this.value=this.value.replace(/\D/g,'')">
+              <span class="cvv-info" title="3 chiffres au dos de votre carte" aria-label="3 chiffres au dos de votre carte">ℹ️</span>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="pay-btn" id="payBtn">
+          🔒 <span id="payBtnText">Payer maintenant</span>
+        </button>
+        <p class="pay-footer" id="payFooter">En cliquant sur "Payer", vous acceptez nos <a href="#" style="color:var(--pink-deep)">conditions générales de vente</a>. Transaction sécurisée par CMI 🔒</p>
+      </form>
+
+      <!-- Processing overlay -->
+      <div class="payment-processing" id="payProcessing">
+        <div class="spinner" aria-hidden="true"></div>
+        <h4 id="processTitle">Traitement en cours…</h4>
+        <p id="processDesc">Veuillez ne pas fermer cette page</p>
+      </div>
+
+      <!-- Success -->
+      <div class="payment-success" id="paySuccess">
+        <div class="success-icon" aria-hidden="true">✅</div>
+        <h4 id="successPayTitle">Paiement confirmé !</h4>
+        <p id="successPayDesc">Votre paiement a été traité avec succès. Vous recevrez une confirmation par SMS.</p>
+        <div class="order-ref" id="orderRef"></div>
+        <br><br>
+        <button class="btn-primary" onclick="closePaymentModal()" style="margin-top:.5rem" id="closeSuccessBtn">Retour à la boutique</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main id="main-content">
+
+<!-- HOME -->
+<div class="page-panel active" id="page-home">
+  <section class="hero" aria-label="Présentation Bubble Shop">
+    <canvas class="confetti-canvas" id="confettiCanvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <span class="hero-bear" aria-hidden="true">🐻</span>
+      <div class="hero-badge" id="heroBadge">✨ K-POP STORE • MAROC</div>
+      <h1 id="heroTitle">Votre univers <span>K-Pop</span> préféré</h1>
+      <p id="heroDesc">Albums, photocards, merch et plus encore — livraison partout au Maroc 🇲🇦</p>
+      <div class="hero-cta">
+        <a href="#" class="btn-primary" onclick="showPage('albums')" id="heroBtn1">Voir les Albums</a>
+        <a href="#order" class="btn-outline" id="heroBtn2">Commander maintenant</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section" aria-labelledby="allProductsTitle">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="eyebrow" id="newLabel">NOUVEAUTÉS</span>
+        <h2 id="allProductsTitle">Tous nos produits</h2>
+        <p id="allProductsDesc">Découvrez notre collection K-Pop 🌸</p>
+      </div>
+      <div class="category-bar" id="mainCatBar" role="group" aria-label="Filtres">
+        <button class="cat-pill active" onclick="filterProducts('all',this)" id="catAll">Tout voir</button>
+        <button class="cat-pill" onclick="filterProducts('albums',this)" id="catAlbums">Albums</button>
+        <button class="cat-pill" onclick="filterProducts('photocards',this)" id="catPhotocards">Photocards</button>
+        <button class="cat-pill" onclick="filterProducts('merch',this)" id="catMerch">Merch</button>
+        <button class="cat-pill" onclick="filterProducts('other',this)" id="catOther">Autre</button>
+      </div>
+      <div class="product-grid" id="mainProductGrid" role="list" aria-label="Produits"></div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq" aria-labelledby="faqTitle">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faqTitle">Questions fréquentes</h2>
+        <p id="faqDesc">Tout ce que vous devez savoir</p>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <section class="order-section" id="order" aria-labelledby="orderTitle">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="eyebrow" id="orderEyebrow">COMMANDE</span>
+        <h2 id="orderTitle">Passer une commande</h2>
+        <p id="orderDesc">Choisissez votre mode de paiement</p>
+      </div>
+      <div class="order-form-container">
+        <div class="order-cart-summary" id="orderSummary">
+          <h4 id="summaryTitle">📦 Votre panier</h4>
+          <div id="summaryItems"><p style="color:var(--text-muted);font-size:.88rem" id="summaryEmpty">Votre panier est vide</p></div>
+          <div class="summary-total" id="summaryTotal" style="display:none">
+            <span id="totalLabelForm">Total</span>
+            <span id="summaryTotalAmount">0 MAD</span>
+          </div>
+        </div>
+        <form id="orderForm" onsubmit="handleOrderSubmit(event)" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label id="labelName">Prénom & Nom *</label>
+              <input type="text" id="fname" placeholder="Fatima Zahra" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label id="labelPhone">Téléphone *</label>
+              <input type="tel" id="fphone" placeholder="+212 6XX XXX XXX" required autocomplete="tel">
+            </div>
+            <div class="form-group full">
+              <label id="labelCity">Ville *</label>
+              <input type="text" id="fcity" placeholder="Casablanca, Rabat, Marrakech…" required autocomplete="address-level2">
+            </div>
+            <div class="form-group full">
+              <label id="labelAddress">Adresse complète *</label>
+              <textarea id="faddress" placeholder="Numéro, rue, quartier…" required autocomplete="street-address"></textarea>
+            </div>
+            <div class="form-group full">
+              <label id="labelNotes">Notes (optionnel)</label>
+              <textarea id="fnotes" placeholder="Informations supplémentaires…"></textarea>
+            </div>
+            <!-- Payment method selection -->
+            <div class="pay-method-row" role="group" aria-labelledby="payMethodLabel">
+              <p id="payMethodLabel" style="grid-column:1/-1;font-family:'Nunito',sans-serif;font-weight:700;color:var(--pink-deep);font-size:.85rem;margin-bottom:4px" id="payMethodLabelText">Mode de paiement *</p>
+              <div class="pay-method-card selected" id="pm-cod" onclick="selectPayMethod('cod')" role="radio" aria-checked="true" tabindex="0">
+                <div class="pm-icon" aria-hidden="true">💵</div>
+                <div class="pm-label" id="pmCodLabel">Paiement à la livraison</div>
+                <div class="pm-sub" id="pmCodSub">Cash on delivery</div>
+              </div>
+              <div class="pay-method-card" id="pm-card" onclick="selectPayMethod('card')" role="radio" aria-checked="false" tabindex="0">
+                <div class="pm-icon" aria-hidden="true">💳</div>
+                <div class="pm-label" id="pmCardLabel">Carte bancaire CMI</div>
+                <div class="pm-sub" id="pmCardSub">Paiement sécurisé en ligne 🔒</div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="submit-order" id="submitBtn">✨ Confirmer ma commande</button>
+        </form>
+        <div class="success-msg" id="successMsg">🎉 Commande confirmée ! Nous vous contacterons sous 24h pour finaliser la livraison.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ALBUMS PAGE -->
+<div class="page-panel" id="page-albums">
+  <div class="hero" style="padding:3rem clamp(1rem,4vw,3rem)">
+    <div class="hero-inner">
+      <div class="hero-badge">💿 ALBUMS</div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem)" id="albumsPageTitle">Albums K-Pop</h1>
+      <p id="albumsPageDesc">Toutes les dernières sorties de vos groupes favoris</p>
+    </div>
+  </div>
+  <section class="products-section" aria-label="Albums K-Pop">
+    <div class="section-inner"><div class="product-grid" id="albumsGrid" role="list"></div></div>
+  </section>
+</div>
+
+<!-- PHOTOCARDS PAGE -->
+<div class="page-panel" id="page-photocards">
+  <div class="hero" style="padding:3rem clamp(1rem,4vw,3rem)">
+    <div class="hero-inner">
+      <div class="hero-badge">🃏 PHOTOCARDS</div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem)" id="photocardsPageTitle">Photocards</h1>
+      <p id="photocardsPageDesc">Photocards officielles et inclusions spéciales</p>
+    </div>
+  </div>
+  <section class="products-section" aria-label="Photocards K-Pop">
+    <div class="section-inner"><div class="product-grid" id="photocardsGrid" role="list"></div></div>
+  </section>
+</div>
+
+<!-- MERCH PAGE -->
+<div class="page-panel" id="page-merch">
+  <div class="hero" style="padding:3rem clamp(1rem,4vw,3rem)">
+    <div class="hero-inner">
+      <div class="hero-badge">👕 MERCH</div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem)" id="merchPageTitle">Merchandise</h1>
+      <p id="merchPageDesc">Vêtements, accessoires et objets de collection</p>
+    </div>
+  </div>
+  <section class="products-section" aria-label="Merch K-Pop">
+    <div class="section-inner"><div class="product-grid" id="merchGrid" role="list"></div></div>
+  </section>
+</div>
+
+<!-- OTHER PAGE -->
+<div class="page-panel" id="page-other">
+  <div class="hero" style="padding:3rem clamp(1rem,4vw,3rem)">
+    <div class="hero-inner">
+      <div class="hero-badge">🌸 AUTRE</div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem)" id="otherPageTitle">Autres produits</h1>
+      <p id="otherPageDesc">Posters, lightsticks et plus encore</p>
+    </div>
+  </div>
+  <section class="products-section" aria-label="Autres produits K-Pop">
+    <div class="section-inner"><div class="product-grid" id="otherGrid" role="list"></div></div>
+  </section>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="logo" onclick="showPage('home')" aria-label="Bubble Shop accueil">
+          <div class="logo-bear" style="background:rgba(255,255,255,.15)" aria-hidden="true">🐻</div>
+          <span class="logo-text">Bubble Shop</span>
+        </a>
+        <p class="footer-desc" id="footerDesc">Votre boutique K-Pop au Maroc. Albums, photocards, merch officiel — livraison rapide et paiement sécurisé CMI 🇲🇦</p>
+        <div class="social-links" aria-label="Réseaux sociaux">
+          <a href="https://www.instagram.com/bubbleshopma" class="social-link" aria-label="Instagram" rel="noopener">📷</a>
+          <a href="https://www.tiktok.com/@bubbleshopma" class="social-link" aria-label="TikTok" rel="noopener">🎵</a>
+          <a href="https://wa.me/212600000000" class="social-link" aria-label="WhatsApp" rel="noopener">💬</a>
+        </div>
+      </div>
+      <nav aria-label="Liens boutique">
+        <div class="footer-title" id="footerShop">BOUTIQUE</div>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showPage('albums')">Albums</a></li>
+          <li><a href="#" onclick="showPage('photocards')">Photocards</a></li>
+          <li><a href="#" onclick="showPage('merch')">Merch</a></li>
+          <li><a href="#" onclick="showPage('other')">Autre</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Liens informations">
+        <div class="footer-title" id="footerInfo">INFOS</div>
+        <ul class="footer-links">
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#order" id="footerOrder">Commander</a></li>
+          <li><a href="admin.html" id="footerAdmin">Administration</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p id="footerCopy">© 2025 Bubble Shop — K-Pop Store Maroc 🐻 Made with 💕 | Paiement sécurisé CMI 🔒</p>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+<a href="https://wa.me/212600000000" class="wa-fab" target="_blank" rel="noopener" aria-label="Contacter via WhatsApp">💬</a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+// ===== PRODUCTS =====
+let products = JSON.parse(localStorage.getItem('bs_products') || 'null') || [
+  {id:1,name:'BTS — Proof (Standard Edition)',category:'albums',price:250,inStock:true,isNew:true,emoji:'💿',img:''},
+  {id:2,name:'BLACKPINK — Born Pink Album',category:'albums',price:280,inStock:true,isNew:false,emoji:'🖤',img:''},
+  {id:3,name:'NewJeans — OMG EP',category:'albums',price:220,inStock:false,isNew:false,emoji:'💿',img:''},
+  {id:4,name:'aespa — MY WORLD Album',category:'albums',price:260,inStock:true,isNew:true,emoji:'✨',img:''},
+  {id:5,name:'BTS Jimin Photocard Set',category:'photocards',price:80,inStock:true,isNew:true,emoji:'🃏',img:''},
+  {id:6,name:'BLACKPINK Lisa Photocard',category:'photocards',price:65,inStock:true,isNew:false,emoji:'🃏',img:''},
+  {id:7,name:'Stray Kids Felix Rare PC',category:'photocards',price:120,inStock:true,isNew:true,emoji:'🌟',img:''},
+  {id:8,name:'BTS Army Bomb Lightstick',category:'merch',price:420,inStock:true,isNew:false,emoji:'💜',img:''},
+  {id:9,name:'BLACKPINK Official Tote Bag',category:'merch',price:180,inStock:false,isNew:false,emoji:'👜',img:''},
+  {id:10,name:'NewJeans Bunny Plushie',category:'merch',price:320,inStock:true,isNew:true,emoji:'🐰',img:''},
+  {id:11,name:'BTS Bangtan Universe Poster',category:'other',price:55,inStock:true,isNew:false,emoji:'🖼️',img:''},
+  {id:12,name:'aespa Karina Washi Tape Set',category:'other',price:75,inStock:true,isNew:true,emoji:'🎀',img:''},
+];
+
+let cart = JSON.parse(localStorage.getItem('bs_cart') || '[]');
+let lang = localStorage.getItem('bs_lang') || 'fr';
+let selectedPayMethod = 'cod';
+
+function saveCart(){localStorage.setItem('bs_cart',JSON.stringify(cart))}
+function saveProducts(){localStorage.setItem('bs_products',JSON.stringify(products))}
+
+// ===== TRANSLATIONS =====
+const t = {
+  fr:{
+    cartTitle:'🛒 Mon Panier',cartEmpty:'Votre panier est vide',
+    cartHint:'Ajoutez des produits pour commencer !',total:'Total',
+    checkout:'Commander maintenant →',add:'Ajouter au panier',added:'Ajouté ✓',
+    oos:'Rupture de stock',new:'Nouveau',
+    orderTitle:'Passer une commande',orderDesc:'Choisissez votre mode de paiement',
+    orderEyebrow:'COMMANDE',labelName:'Prénom & Nom *',labelPhone:'Téléphone *',
+    labelCity:'Ville *',labelAddress:'Adresse complète *',labelNotes:'Notes (optionnel)',
+    submitBtn:'✨ Confirmer ma commande',
+    successMsg:'🎉 Commande confirmée ! Nous vous contacterons sous 24h pour finaliser la livraison.',
+    summaryTitle:'📦 Votre panier',summaryEmpty:'Votre panier est vide',totalLabel:'Total',
+    heroBadge:'✨ K-POP STORE • MAROC',heroTitle:'Votre univers <span>K-Pop</span> préféré',
+    heroDesc:'Albums, photocards, merch et plus encore — livraison partout au Maroc 🇲🇦',
+    heroBtn1:'Voir les Albums',heroBtn2:'Commander maintenant',
+    newLabel:'NOUVEAUTÉS',allProductsTitle:'Tous nos produits',allProductsDesc:'Découvrez notre collection K-Pop 🌸',
+    catAll:'Tout voir',catAlbums:'Albums',catPhotocards:'Photocards',catMerch:'Merch',catOther:'Autre',
+    faqTitle:'Questions fréquentes',faqDesc:'Tout ce que vous devez savoir',
+    footerDesc:'Votre boutique K-Pop au Maroc. Albums, photocards, merch officiel — livraison rapide et paiement sécurisé CMI 🇲🇦',
+    footerShop:'BOUTIQUE',footerInfo:'INFOS',footerOrder:'Commander',footerAdmin:'Administration',
+    footerCopy:'© 2025 Bubble Shop — K-Pop Store Maroc 🐻 Made with 💕 | Paiement sécurisé CMI 🔒',
+    toastAdded:'Ajouté au panier !',toastRemoved:'Retiré du panier',
+    albumsPageTitle:'Albums K-Pop',albumsPageDesc:'Toutes les dernières sorties de vos groupes favoris',
+    photocardsPageTitle:'Photocards',photocardsPageDesc:'Photocards officielles et inclusions spéciales',
+    merchPageTitle:'Merchandise',merchPageDesc:'Vêtements, accessoires et objets de collection',
+    otherPageTitle:'Autres produits',otherPageDesc:'Posters, lightsticks et plus encore',
+    pmCodLabel:'Paiement à la livraison',pmCodSub:'Cash on delivery',
+    pmCardLabel:'Carte bancaire CMI',pmCardSub:'Paiement sécurisé en ligne 🔒',
+    modalTitle:'🔒 Paiement sécurisé',modalSubtitle:'Powered by CMI — Centre Monétique Interbancaire',
+    lCardName:'Nom sur la carte',lCardNumber:'Numéro de carte',lCardExpiry:"Date d'expiration",lCardCVV:'Code CVV',
+    payBtnText:'Payer maintenant',payFooter:'Transaction sécurisée par CMI 🔒',
+    processTitle:'Traitement en cours…',processDesc:'Veuillez ne pas fermer cette page',
+    successPayTitle:'Paiement confirmé !',successPayDesc:'Votre paiement a été traité avec succès. Vous recevrez une confirmation par SMS.',
+    closeSuccessBtn:'Retour à la boutique',modalSummaryTitle:'📦 Récapitulatif',modalTotalLabel:'Total à payer',
+    faqs:[
+      {q:'Comment puis-je passer une commande ?',a:"Ajoutez les produits à votre panier, remplissez le formulaire de commande et choisissez votre mode de paiement. Nous vous contacterons sous 24h."},
+      {q:'Quels sont les modes de paiement acceptés ?',a:"Nous acceptons le paiement à la livraison (cash) et le paiement sécurisé par carte bancaire via CMI (Visa, Mastercard, CIH, BMCE, Attijariwafa, Banque Populaire)."},
+      {q:'Mon paiement par carte est-il sécurisé ?',a:"Oui, 100%. Notre système de paiement est certifié CMI (Centre Monétique Interbancaire) avec chiffrement SSL 256-bit. Vos données bancaires ne sont jamais stockées sur notre site."},
+      {q:'Quels sont les délais de livraison ?',a:"Nous livrons partout au Maroc en 3 à 5 jours ouvrables après confirmation de votre commande."},
+      {q:'Les produits sont-ils authentiques ?',a:"Oui ! Tous nos produits sont 100% officiels et authentiques, importés directement de Corée."},
+      {q:'Comment suivre ma commande ?',a:"Une fois votre commande expédiée, vous recevrez un numéro de suivi par WhatsApp ou SMS."},
+    ]
+  },
+  en:{
+    cartTitle:'🛒 My Cart',cartEmpty:'Your cart is empty',
+    cartHint:'Add products to get started!',total:'Total',
+    checkout:'Order now →',add:'Add to cart',added:'Added ✓',
+    oos:'Out of stock',new:'New',
+    orderTitle:'Place an order',orderDesc:'Choose your payment method',
+    orderEyebrow:'ORDER',labelName:'First & Last Name *',labelPhone:'Phone *',
+    labelCity:'City *',labelAddress:'Full address *',labelNotes:'Notes (optional)',
+    submitBtn:'✨ Confirm my order',
+    successMsg:'🎉 Order confirmed! We will contact you within 24h to finalize delivery.',
+    summaryTitle:'📦 Your cart',summaryEmpty:'Your cart is empty',totalLabel:'Total',
+    heroBadge:'✨ K-POP STORE • MOROCCO',heroTitle:'Your favorite <span>K-Pop</span> universe',
+    heroDesc:'Albums, photocards, merch and more — delivery across Morocco 🇲🇦',
+    heroBtn1:'Browse Albums',heroBtn2:'Order now',
+    newLabel:'NEW ARRIVALS',allProductsTitle:'All products',allProductsDesc:'Discover our K-Pop collection 🌸',
+    catAll:'All',catAlbums:'Albums',catPhotocards:'Photocards',catMerch:'Merch',catOther:'Other',
+    faqTitle:'Frequently asked questions',faqDesc:'Everything you need to know',
+    footerDesc:'Your K-Pop store in Morocco. Albums, photocards, official merch — fast delivery and secure CMI payments 🇲🇦',
+    footerShop:'SHOP',footerInfo:'INFO',footerOrder:'Order',footerAdmin:'Admin panel',
+    footerCopy:'© 2025 Bubble Shop — K-Pop Store Morocco 🐻 Made with 💕 | Secure CMI Payment 🔒',
+    toastAdded:'Added to cart!',toastRemoved:'Removed from cart',
+    albumsPageTitle:'K-Pop Albums',albumsPageDesc:'All the latest releases from your favorite groups',
+    photocardsPageTitle:'Photocards',photocardsPageDesc:'Official photocards and special inclusions',
+    merchPageTitle:'Merchandise',merchPageDesc:'Clothing, accessories and collectibles',
+    otherPageTitle:'Other products',otherPageDesc:'Posters, lightsticks and more',
+    pmCodLabel:'Cash on delivery',pmCodSub:'Pay when you receive',
+    pmCardLabel:'CMI Bank card',pmCardSub:'Secure online payment 🔒',
+    modalTitle:'🔒 Secure payment',modalSubtitle:'Powered by CMI — Centre Monétique Interbancaire',
+    lCardName:'Name on card',lCardNumber:'Card number',lCardExpiry:'Expiry date',lCardCVV:'CVV code',
+    payBtnText:'Pay now',payFooter:'Transaction secured by CMI 🔒',
+    processTitle:'Processing…',processDesc:'Please do not close this page',
+    successPayTitle:'Payment confirmed!',successPayDesc:'Your payment was processed successfully. You will receive a confirmation by SMS.',
+    closeSuccessBtn:'Back to shop',modalSummaryTitle:'📦 Order summary',modalTotalLabel:'Total to pay',
+    faqs:[
+      {q:'How do I place an order?',a:"Add products to your cart, fill out the order form and choose your payment method. We will contact you within 24h."},
+      {q:'What payment methods do you accept?',a:"We accept cash on delivery and secure online payment by bank card via CMI (Visa, Mastercard, CIH, BMCE, Attijariwafa, Banque Populaire)."},
+      {q:'Is my card payment secure?',a:"Yes, 100%. Our payment system is certified by CMI (Centre Monétique Interbancaire) with 256-bit SSL encryption. Your card data is never stored on our site."},
+      {q:'What are the delivery times?',a:"We deliver anywhere in Morocco within 3 to 5 business days after your order is confirmed."},
+      {q:'Are the products authentic?',a:"Yes! All our products are 100% official and authentic, imported directly from Korea."},
+      {q:'How do I track my order?',a:"Once your order is shipped, you will receive a tracking number via WhatsApp or SMS."},
+    ]
+  }
+};
+const tr = k => t[lang][k] || k;
+
+function toggleLang(){
+  lang = lang==='fr'?'en':'fr';
+  localStorage.setItem('bs_lang',lang);
+  applyLang();
+}
+
+function applyLang(){
+  const T=t[lang];
+  const map = {
+    cartTitle:1,totalLabel:1,totalLabelForm:1,orderTitle:1,orderDesc:1,orderEyebrow:1,
+    labelName:1,labelPhone:1,labelCity:1,labelAddress:1,labelNotes:1,submitBtn:1,
+    successMsg:1,summaryTitle:1,summaryEmpty:1,heroBadge:1,heroDesc:1,heroBtn1:1,heroBtn2:1,
+    newLabel:1,allProductsTitle:1,allProductsDesc:1,catAll:1,catAlbums:1,catPhotocards:1,
+    catMerch:1,catOther:1,faqTitle:1,faqDesc:1,footerDesc:1,footerShop:1,footerInfo:1,
+    footerOrder:1,footerAdmin:1,footerCopy:1,albumsPageTitle:1,albumsPageDesc:1,
+    photocardsPageTitle:1,photocardsPageDesc:1,merchPageTitle:1,merchPageDesc:1,
+    otherPageTitle:1,otherPageDesc:1,cartEmptyMsg:1,cartEmptyHint:1,
+    pmCodLabel:1,pmCodSub:1,pmCardLabel:1,pmCardSub:1,
+    modalTitle:1,modalSubtitle:1,lCardName:1,lCardNumber:1,lCardExpiry:1,lCardCVV:1,
+    payBtnText:1,payFooter:1,processTitle:1,processDesc:1,
+    successPayTitle:1,successPayDesc:1,closeSuccessBtn:1,modalSummaryTitle:1,modalTotalLabel:1,
+    checkoutBtn:1
+  };
+  Object.keys(map).forEach(id=>{
+    const el=document.getElementById(id);
+    if(el && T[id]!==undefined) el.innerHTML=T[id];
+  });
+  const ht=document.getElementById('heroTitle');
+  if(ht) ht.innerHTML=T.heroTitle;
+  renderFAQ();
+  renderCart();
+  renderAllGrids();
+}
+
+// ===== RENDER PRODUCTS =====
+function productCard(p){
+  const T=t[lang];
+  return `<div class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+    <div class="product-img">
+      ${p.img?`<img src="${p.img}" alt="${p.name}" loading="lazy" itemprop="image">`:`<span style="font-size:4rem" aria-hidden="true">${p.emoji||'🎵'}</span>`}
+      ${!p.inStock?`<span class="badge-oos" aria-label="Rupture de stock">${T.oos}</span>`:''}
+      ${p.isNew&&p.inStock?`<span class="badge-new" aria-label="Nouveau produit">${T.new}</span>`:''}
+    </div>
+    <div class="product-info">
+      <div class="product-category" itemprop="category">${getCatLabel(p.category)}</div>
+      <div class="product-name" itemprop="name">${p.name}</div>
+      <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <span itemprop="price" content="${p.price}">${p.price}</span>
+        <span itemprop="priceCurrency" content="MAD"> MAD</span>
+        <meta itemprop="availability" content="${p.inStock?'https://schema.org/InStock':'https://schema.org/OutOfStock'}">
+      </div>
+      <button class="add-to-cart" onclick="addToCart(${p.id},this)" ${!p.inStock?'disabled':''} aria-label="${p.inStock?T.add+' — '+p.name:T.oos}">
+        ${!p.inStock?T.oos:`🛒 ${T.add}`}
+      </button>
+    </div>
+  </div>`;
+}
+
+function getCatLabel(cat){
+  return {albums:'💿 Album',photocards:'🃏 Photocard',merch:'👕 Merch',other:'🌸 Autre'}[cat]||cat;
+}
+
+function renderGrid(id,filter){
+  const el=document.getElementById(id);
+  if(!el) return;
+  const list=filter==='all'?products:products.filter(p=>p.category===filter);
+  el.innerHTML=list.length?list.map(productCard).join(''):`<p style="color:var(--text-muted);padding:2rem;grid-column:1/-1;text-align:center">Aucun produit dans cette catégorie</p>`;
+}
+function renderAllGrids(){
+  renderGrid('mainProductGrid','all');
+  renderGrid('albumsGrid','albums');
+  renderGrid('photocardsGrid','photocards');
+  renderGrid('merchGrid','merch');
+  renderGrid('otherGrid','other');
+  updateOrderSummary();
+}
+function filterProducts(cat,btn){
+  document.querySelectorAll('#mainCatBar .cat-pill').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderGrid('mainProductGrid',cat);
+}
+
+// ===== CART =====
+function addToCart(id,btn){
+  const p=products.find(x=>x.id===id);
+  if(!p||!p.inStock) return;
+  const ex=cart.find(x=>x.id===id);
+  if(ex) ex.qty++; else cart.push({...p,qty:1});
+  saveCart();updateCartCount();renderCart();updateOrderSummary();
+  if(btn){
+    const orig=btn.innerHTML;
+    btn.innerHTML='✓ '+tr('added');btn.classList.add('added');
+    setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('added')},1500);
+  }
+  showToast(tr('toastAdded'));
+  spawnHearts(btn);
+}
+function removeFromCart(id){
+  cart=cart.filter(x=>x.id!==id);
+  saveCart();updateCartCount();renderCart();updateOrderSummary();
+  showToast(tr('toastRemoved'));
+}
+function changeQty(id,d){
+  const item=cart.find(x=>x.id===id);
+  if(!item) return;
+  item.qty+=d;
+  if(item.qty<=0){removeFromCart(id);return;}
+  saveCart();renderCart();updateOrderSummary();
+}
+function updateCartCount(){
+  document.getElementById('cartCount').textContent=cart.reduce((a,b)=>a+b.qty,0);
+}
+function getCartTotal(){return cart.reduce((a,b)=>a+b.price*b.qty,0)}
+function renderCart(){
+  const el=document.getElementById('cartItems');
+  if(!cart.length){
+    el.innerHTML=`<div class="cart-empty"><div class="empty-icon" aria-hidden="true">🛒</div><p>${tr('cartEmpty')}</p><p style="font-size:.85rem;margin-top:8px;color:#bbb">${tr('cartHint')}</p></div>`;
+  } else {
+    el.innerHTML=cart.map(item=>`
+      <div class="cart-item">
+        <div class="cart-item-img" aria-hidden="true">${item.img?`<img src="${item.img}" alt="">`:`<span>${item.emoji||'🎵'}</span>`}</div>
+        <div class="cart-item-info">
+          <div class="cart-item-name">${item.name}</div>
+          <div class="cart-item-price">${item.price*item.qty} MAD</div>
+          <div class="cart-qty" role="group" aria-label="Quantité">
+            <button class="qty-btn" onclick="changeQty(${item.id},-1)" aria-label="Diminuer">−</button>
+            <span class="qty-num" aria-live="polite">${item.qty}</span>
+            <button class="qty-btn" onclick="changeQty(${item.id},1)" aria-label="Augmenter">+</button>
+          </div>
+        </div>
+        <button class="remove-item" onclick="removeFromCart(${item.id})" aria-label="Supprimer ${item.name}">✕</button>
+      </div>`).join('');
+  }
+  document.getElementById('cartTotal').textContent=getCartTotal()+' MAD';
+}
+function toggleCart(){
+  document.getElementById('cartSidebar').classList.toggle('open');
+  document.getElementById('cartOverlay').classList.toggle('open');
+}
+function updateOrderSummary(){
+  const el=document.getElementById('summaryItems');
+  const te=document.getElementById('summaryTotal');
+  const ta=document.getElementById('summaryTotalAmount');
+  if(!cart.length){
+    el.innerHTML=`<p style="color:var(--text-muted);font-size:.88rem">${tr('summaryEmpty')}</p>`;
+    if(te) te.style.display='none';
+  } else {
+    el.innerHTML=cart.map(i=>`<div class="summary-item"><span>${i.name} x${i.qty}</span><span>${i.price*i.qty} MAD</span></div>`).join('');
+    if(te) te.style.display='flex';
+    if(ta) ta.textContent=getCartTotal()+' MAD';
+  }
+}
+function goToCheckout(){
+  toggleCart();
+  document.getElementById('order').scrollIntoView({behavior:'smooth'});
+}
+
+// ===== PAYMENT METHOD =====
+function selectPayMethod(method){
+  selectedPayMethod=method;
+  document.querySelectorAll('.pay-method-card').forEach(c=>{c.classList.remove('selected');c.setAttribute('aria-checked','false')});
+  const sel=document.getElementById('pm-'+method);
+  if(sel){sel.classList.add('selected');sel.setAttribute('aria-checked','true')}
+}
+
+// ===== ORDER FORM =====
+function handleOrderSubmit(e){
+  e.preventDefault();
+  if(!cart.length){showToast('🛒 Votre panier est vide !');return;}
+  if(selectedPayMethod==='card'){
+    openPaymentModal();
+  } else {
+    submitCODOrder();
+  }
+}
+function submitCODOrder(){
+  document.getElementById('orderForm').style.display='none';
+  document.getElementById('successMsg').style.display='block';
+  cart=[];saveCart();updateCartCount();renderCart();updateOrderSummary();
+  setTimeout(()=>{
+    document.getElementById('orderForm').style.display='block';
+    document.getElementById('successMsg').style.display='none';
+    document.getElementById('orderForm').reset();
+    selectPayMethod('cod');
+  },6000);
+}
+
+// ===== CMI PAYMENT MODAL =====
+function openPaymentModal(){
+  const T=t[lang];
+  // Populate modal summary
+  const items=document.getElementById('modalSummaryItems');
+  items.innerHTML=cart.map(i=>`<div class="modal-sum-item"><span>${i.name} ×${i.qty}</span><span>${i.price*i.qty} MAD</span></div>`).join('');
+  document.getElementById('modalTotalAmount').textContent=getCartTotal()+' MAD';
+  // Update pay button
+  document.getElementById('payBtnText').textContent=T.payBtnText+' — '+getCartTotal()+' MAD';
+  // Reset state
+  document.getElementById('cardForm').style.display='block';
+  document.getElementById('payProcessing').style.display='none';
+  document.getElementById('paySuccess').style.display='none';
+  document.getElementById('cardForm').reset();
+  document.getElementById('cardBrandIcon').textContent='💳';
+  // Open
+  document.getElementById('paymentModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closePaymentModal(){
+  document.getElementById('paymentModal').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+// Card formatting
+function formatCardNumber(input){
+  let v=input.value.replace(/\D/g,'').substring(0,16);
+  input.value=v.replace(/(.{4})/g,'$1 ').trim();
+  // Detect brand
+  const icon=document.getElementById('cardBrandIcon');
+  if(v.startsWith('4')) icon.textContent='💳'; // Visa
+  else if(/^5[1-5]/.test(v)||/^2[2-7]/.test(v)) icon.textContent='🔴'; // MC
+  else icon.textContent='💳';
+}
+function formatExpiry(input){
+  let v=input.value.replace(/\D/g,'');
+  if(v.length>=2) v=v.substring(0,2)+'/'+v.substring(2,4);
+  input.value=v;
+}
+
+// CMI payment processing (simulation — replace with real CMI gateway URL in production)
+function processPayment(e){
+  e.preventDefault();
+  const name=document.getElementById('cardName').value;
+  const num=document.getElementById('cardNumber').value.replace(/\s/g,'');
+  const exp=document.getElementById('cardExpiry').value;
+  const cvv=document.getElementById('cardCVV').value;
+  // Validation
+  if(num.length<16){showToast('❌ Numéro de carte invalide');return;}
+  if(exp.length<5){showToast('❌ Date d\'expiration invalide');return;}
+  if(cvv.length<3){showToast('❌ CVV invalide');return;}
+  // Show processing
+  document.getElementById('cardForm').style.display='none';
+  document.getElementById('payProcessing').style.display='block';
+  // Simulate CMI gateway (in production: POST to your CMI backend endpoint)
+  // CMI INTEGRATION NOTE: Replace this setTimeout with a real fetch to your CMI server-side handler
+  // Your CMI merchant ID and credentials must be configured server-side only (never in client JS)
+  setTimeout(()=>{
+    document.getElementById('payProcessing').style.display='none';
+    document.getElementById('paySuccess').style.display='block';
+    // Generate order reference
+    const ref='BS-'+Date.now().toString(36).toUpperCase();
+    document.getElementById('orderRef').textContent='Réf. commande : '+ref;
+    // Clear cart
+    cart=[];saveCart();updateCartCount();renderCart();updateOrderSummary();
+    // Close order form
+    setTimeout(()=>{
+      document.getElementById('orderForm').style.display='block';
+      document.getElementById('successMsg').style.display='none';
+      document.getElementById('orderForm').reset();
+      selectPayMethod('cod');
+    },500);
+  },3000);
+}
+
+// ===== FAQ =====
+function renderFAQ(){
+  const faqs=t[lang].faqs;
+  const el=document.getElementById('faqList');
+  if(!el) return;
+  el.innerHTML=faqs.map((f,i)=>`
+    <div class="faq-item" id="faq-${i}" itemscope itemtype="https://schema.org/Question">
+      <button class="faq-q" onclick="toggleFAQ(${i})" aria-expanded="false" aria-controls="faq-ans-${i}">
+        <span itemprop="name">${f.q}</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-a" id="faq-ans-${i}" role="region" itemscope itemtype="https://schema.org/Answer">
+        <span itemprop="text">${f.a}</span>
+      </div>
+    </div>`).join('');
+}
+function toggleFAQ(i){
+  const item=document.getElementById('faq-'+i);
+  const btn=item.querySelector('.faq-q');
+  const wasOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(el=>{
+    el.classList.remove('open');
+    el.querySelector('.faq-q').setAttribute('aria-expanded','false');
+  });
+  if(!wasOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');}
+}
+
+// ===== PAGES =====
+function showPage(page){
+  document.querySelectorAll('.page-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  document.getElementById('page-'+page).classList.add('active');
+  const nav=document.getElementById('nav-'+page);
+  if(nav) nav.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  document.getElementById('navLinks').classList.remove('open');
+  // Update page title for SEO
+  const titles={home:'Bubble Shop — K-Pop Store Maroc',albums:'Albums K-Pop | Bubble Shop',photocards:'Photocards | Bubble Shop',merch:'Merchandise | Bubble Shop',other:'Autres produits | Bubble Shop'};
+  document.title=titles[page]||'Bubble Shop';
+  return false;
+}
+function toggleMenu(){
+  const m=document.getElementById('navLinks');
+  const open=m.classList.toggle('open');
+  document.querySelector('.hamburger').setAttribute('aria-expanded',open);
+}
+
+// ===== TOAST =====
+function showToast(msg){
+  const el=document.getElementById('toast');
+  el.textContent=msg;el.classList.add('show');
+  setTimeout(()=>el.classList.remove('show'),2200);
+}
+
+// ===== HEARTS =====
+function spawnHearts(btn){
+  const c=document.getElementById('floatingHearts');
+  const emojis=['💕','🌸','✨','💖','🩷','⭐'];
+  const r=btn?btn.getBoundingClientRect():{top:window.innerHeight/2,left:window.innerWidth/2};
+  for(let i=0;i<5;i++){
+    setTimeout(()=>{
+      const h=document.createElement('div');
+      h.className='heart-particle';h.setAttribute('aria-hidden','true');
+      h.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+      h.style.left=(r.left+r.width/2+Math.random()*60-30)+'px';
+      h.style.top=(r.top+window.scrollY)+'px';
+      c.appendChild(h);setTimeout(()=>h.remove(),2000);
+    },i*100);
+  }
+}
+
+// ===== CONFETTI =====
+function initConfetti(){
+  const canvas=document.getElementById('confettiCanvas');
+  if(!canvas) return;
+  const ctx=canvas.getContext('2d');
+  canvas.width=canvas.offsetWidth;canvas.height=canvas.offsetHeight;
+  const emojis=['🌸','💕','⭐','🩷','✨','💗'];
+  const pieces=Array.from({length:20},()=>({
+    x:Math.random()*canvas.width,y:Math.random()*canvas.height-canvas.height,
+    speed:.4+Math.random()*.6,emoji:emojis[Math.floor(Math.random()*emojis.length)],
+    size:14+Math.random()*10,drift:(Math.random()-.5)*.4,opacity:.4+Math.random()*.5
+  }));
+  (function animate(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    pieces.forEach(p=>{
+      p.y+=p.speed;p.x+=p.drift;
+      if(p.y>canvas.height+20){p.y=-20;p.x=Math.random()*canvas.width;}
+      ctx.globalAlpha=p.opacity;ctx.font=p.size+'px serif';ctx.fillText(p.emoji,p.x,p.y);
+    });
+    ctx.globalAlpha=1;requestAnimationFrame(animate);
+  })();
+  window.addEventListener('resize',()=>{canvas.width=canvas.offsetWidth;canvas.height=canvas.offsetHeight});
+}
+
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded',()=>{
+  applyLang();updateCartCount();initConfetti();
+  // Keyboard support for payment modal
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape') closePaymentModal();
+  });
+  // Keyboard nav for pay method cards
+  document.querySelectorAll('.pay-method-card').forEach(card=>{
+    card.addEventListener('keydown',e=>{
+      if(e.key===' '||e.key==='Enter'){
+        const method=card.id.replace('pm-','');
+        selectPayMethod(method);
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
